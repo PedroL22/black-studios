@@ -1,3 +1,3 @@
 export const Portfolio = () => {
-  return <div>portfolio</div>
+  return <div>Portfolio</div>
 }
