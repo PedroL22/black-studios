@@ -1,3 +1,10 @@
+import { BrowserRouter } from 'react-router-dom'
+import { AllRoutes } from './routes'
+
 export const App = () => {
-  return <div className='bg-red-500'>olá mundo</div>
+  return (
+    <BrowserRouter>
+      <AllRoutes />
+    </BrowserRouter>
+  )
 }
