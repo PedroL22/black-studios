@@ -1,3 +1,5 @@
+import { MainContainer } from '@components/MainContainer'
+
 export const Home = () => {
-  return <div>Home</div>
+  return <MainContainer>Home</MainContainer>
 }

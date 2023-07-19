@@ -1,3 +1,5 @@
+import { MainContainer } from '@components/MainContainer'
+
 export const Contato = () => {
-  return <div>Contato</div>
+  return <MainContainer>Contato</MainContainer>
 }

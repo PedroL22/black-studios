@@ -1,3 +1,5 @@
+import { MainContainer } from '@components/MainContainer'
+
 export const Portfolio = () => {
-  return <div>Portfolio</div>
+  return <MainContainer>Portfólio</MainContainer>
 }
