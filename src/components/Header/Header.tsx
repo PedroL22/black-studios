@@ -17,6 +17,12 @@ export const Header = () => {
         </div>
         <div className='hidden space-x-6 md:flex'>
           <Link
+            to='/'
+            className="relative after:absolute after:left-1/2 after:top-7 after:h-[1px] after:w-0 after:bg-zinc-50 after:transition-all after:duration-300 after:ease-in-out after:content-[''] hover:after:left-[13%] hover:after:w-3/4"
+          >
+            Home
+          </Link>
+          <Link
             to='/portfolio'
             className="relative after:absolute after:left-1/2 after:top-7 after:h-[1px] after:w-0 after:bg-zinc-50 after:transition-all after:duration-300 after:ease-in-out after:content-[''] hover:after:left-[13%] hover:after:w-3/4"
           >
