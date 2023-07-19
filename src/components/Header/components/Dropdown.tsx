@@ -24,7 +24,7 @@ export const Dropdown = () => {
       </label>
       <ul
         tabIndex={0}
-        className='menu dropdown-content rounded-box menu-sm z-[1] mt-3 w-52 bg-base-100 p-2 shadow'
+        className='menu dropdown-content rounded-box menu-sm z-[1] mt-3 w-52 bg-base-100 p-2 text-zinc-950 shadow dark:text-zinc-50'
       >
         <li>
           <Link to='/portfolio'>Portfólio</Link>

@@ -1,19 +1,43 @@
+import { motion } from 'framer-motion'
+
 import { MainContainer } from '@components/MainContainer'
 
 export const Home = () => {
   return (
     <MainContainer>
       <div className='space-y-5 pb-10'>
-        <h1 className='flex flex-col whitespace-nowrap text-center text-5xl md:text-9xl'>
+        <motion.h1
+          initial={{ opacity: 0, x: -15 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0, ease: 'easeOut' }}
+          className='flex flex-col whitespace-nowrap text-center text-5xl md:text-9xl'
+        >
           Bem-vindos à{' '}
-          <span className='bg-gradient-to-r from-slate-300 to-slate-600 bg-clip-text text-5xl font-medium text-transparent md:text-9xl'>
+          <motion.span
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.75, delay: 0.5, ease: 'easeOut' }}
+            className='bg-gradient-to-r from-slate-300 to-slate-600 bg-clip-text text-5xl font-medium text-transparent md:text-9xl'
+          >
             Black Studios
-          </span>
-        </h1>
+          </motion.span>
+        </motion.h1>
 
-        <h2 className='text-center text-4xl font-light text-zinc-200 md:text-7xl'>Produtora audiovisual</h2>
+        <motion.h2
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.75, delay: 0.6, ease: 'easeOut' }}
+          className='text-center text-4xl font-light text-zinc-200 md:text-7xl'
+        >
+          Produtora audiovisual
+        </motion.h2>
       </div>
-      <div className='flex justify-center pb-10'>
+      <motion.div
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.75, delay: 0.7, ease: 'easeOut' }}
+        className='flex justify-center pb-10'
+      >
         <iframe
           src='https://www.youtube.com/embed/Rl8oGtG-qNM'
           title='vídeo de apresentação'
@@ -21,7 +45,7 @@ export const Home = () => {
           allowFullScreen
           className='h-[175px] w-[320px] md:h-[480px] md:w-[768px]'
         />
-      </div>
+      </motion.div>
     </MainContainer>
   )
 }
