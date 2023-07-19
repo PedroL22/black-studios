@@ -7,7 +7,7 @@ export const App = () => {
   return (
     <BrowserRouter>
       <Header />
-      <div className='min-h-screen bg-slate-800 text-slate-50'>
+      <div className='min-h-screen bg-zinc-900 text-zinc-50'>
         <AllRoutes />
       </div>
     </BrowserRouter>
