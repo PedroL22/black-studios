@@ -9,6 +9,7 @@ export const Footer = () => {
             href='https://github.com/PedroL22/'
             target='_blank'
             rel='noreferrer'
+            aria-label='GitHub de Pedro Lucena'
             className='font-medium text-zinc-50 no-underline'
           >
             Pedro Lucena

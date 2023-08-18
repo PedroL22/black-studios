@@ -32,20 +32,22 @@ export const Home = () => {
           Produtora audiovisual
         </motion.h2>
       </div>
-      <motion.div
+
+      <motion.main
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.2, ease: 'easeOut' }}
+        aria-label='Vídeo de apresentação da Black Studios'
         className='flex justify-center pb-10'
       >
         <iframe
           src='https://www.youtube.com/embed/Rl8oGtG-qNM'
-          title='vídeo de apresentação'
+          title='vídeo'
           allow='autoplay'
           allowFullScreen
           className='h-[175px] w-[320px] md:h-[480px] md:w-[768px]'
         />
-      </motion.div>
+      </motion.main>
     </MainContainer>
   )
 }

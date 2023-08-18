@@ -9,14 +9,14 @@ export const Contato = () => {
   return (
     <MainContainer>
       <div className='space-y-4 pb-10'>
-        <motion.h2
+        <motion.h1
           initial={{ opacity: 0, x: -15 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0, ease: 'easeOut' }}
           className='text-6xl font-medium'
         >
           Contato
-        </motion.h2>
+        </motion.h1>
         <motion.p
           initial={{ opacity: 0, x: -15 }}
           animate={{ opacity: 1, x: 0 }}
@@ -26,10 +26,12 @@ export const Contato = () => {
           Se quiser fazer parte da Black Studios e agregar na qualidade do seu conteúdo, entre em contato com a gente!
         </motion.p>
       </div>
-      <motion.div
+
+      <motion.main
         initial={{ opacity: 0, x: -15 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, delay: 0.1, ease: 'easeOut' }}
+        aria-label='Redes sociais da Black Studios'
         className='space-y-3'
       >
         <SocialMedia
@@ -38,6 +40,7 @@ export const Contato = () => {
               color='#FAFAFA'
               weight='regular'
               size={28}
+              aria-hidden
             />
           }
           name='matheus2707.profissional@gmail.com'
@@ -49,6 +52,7 @@ export const Contato = () => {
               color='#25D366'
               weight='regular'
               size={28}
+              aria-hidden
             />
           }
           name='+55 (12) 99754-8203'
@@ -60,6 +64,7 @@ export const Contato = () => {
               color='#1DA1F2'
               weight='regular'
               size={28}
+              aria-hidden
             />
           }
           name='Twitter'
@@ -71,6 +76,7 @@ export const Contato = () => {
               color='#C13584'
               weight='regular'
               size={28}
+              aria-hidden
             />
           }
           name='Instagram'
@@ -82,12 +88,13 @@ export const Contato = () => {
               color='#FF0000'
               weight='regular'
               size={28}
+              aria-hidden
             />
           }
           name='YouTube'
           url='https://www.youtube.com/@matheusoliveiro3834'
         />
-      </motion.div>
+      </motion.main>
     </MainContainer>
   )
 }
