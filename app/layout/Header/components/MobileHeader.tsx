@@ -1,12 +1,15 @@
+'use client'
+
 import { AnimatePresence, motion } from 'framer-motion'
+import { usePathname } from 'next/navigation'
 import { useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
 
 import { List, X } from '@phosphor-icons/react'
+import Link from 'next/link'
 
 export const MobileHeader = () => {
   const [isOpen, setIsOpen] = useState(false)
-  const location = useLocation()
+  const pathname = usePathname()
 
   return (
     <>
@@ -41,23 +44,23 @@ export const MobileHeader = () => {
             className='fixed bottom-0 left-0 z-10 flex h-screen w-screen select-none flex-col items-center justify-center space-y-6 bg-[rgba(0,0,0,0.5)] pt-5 backdrop-blur-md'
           >
             <Link
-              to='/'
+              href='/'
               onClick={() => setIsOpen(false)}
-              className={`${location.pathname == '/' && 'text-zinc-400'} text-3xl`}
+              className={`${pathname == '/' && 'text-zinc-400'} text-3xl`}
             >
               Home
             </Link>
             <Link
-              to='/portfolio'
+              href='/portfolio'
               onClick={() => setIsOpen(false)}
-              className={`${location.pathname == '/portfolio' && 'text-zinc-400'} text-3xl`}
+              className={`${pathname == '/portfolio' && 'text-zinc-400'} text-3xl`}
             >
               Portfólio
             </Link>
             <Link
-              to='/contato'
+              href='/contato'
               onClick={() => setIsOpen(false)}
-              className={`${location.pathname == '/contato' && 'text-zinc-400'} text-3xl`}
+              className={`${pathname == '/contato' && 'text-zinc-400'} text-3xl`}
             >
               Contato
             </Link>

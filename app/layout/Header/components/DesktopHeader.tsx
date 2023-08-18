@@ -1,14 +1,17 @@
-import { Link, useLocation } from 'react-router-dom'
+'use client'
+
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 export const DesktopHeader = () => {
-  const location = useLocation()
+  const pathname = usePathname()
 
   return (
     <div className='hidden space-x-6 md:flex'>
       <Link
-        to='/'
+        href='/'
         className={
-          location.pathname == '/'
+          pathname == '/'
             ? 'text-zinc-400'
             : "relative after:absolute after:left-1/2 after:top-7 after:h-[1px] after:w-0 after:bg-zinc-50 after:transition-all after:duration-300 after:ease-in-out after:content-[''] hover:after:left-[13%] hover:after:w-3/4"
         }
@@ -16,9 +19,9 @@ export const DesktopHeader = () => {
         Home
       </Link>
       <Link
-        to='/portfolio'
+        href='/portfolio'
         className={
-          location.pathname == '/portfolio'
+          pathname == '/portfolio'
             ? 'text-zinc-400'
             : "relative after:absolute after:left-1/2 after:top-7 after:h-[1px] after:w-0 after:bg-zinc-50 after:transition-all after:duration-300 after:ease-in-out after:content-[''] hover:after:left-[13%] hover:after:w-3/4"
         }
@@ -26,9 +29,9 @@ export const DesktopHeader = () => {
         Portfólio
       </Link>
       <Link
-        to='/contato'
+        href='/contato'
         className={
-          location.pathname == '/contato'
+          pathname == '/contato'
             ? 'text-zinc-400'
             : "relative after:absolute after:left-1/2 after:top-7 after:h-[1px] after:w-0 after:bg-zinc-50 after:transition-all after:duration-300 after:ease-in-out after:content-[''] hover:after:left-[13%] hover:after:w-3/4"
         }

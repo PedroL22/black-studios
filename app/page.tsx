@@ -1,8 +1,10 @@
+'use client'
+
 import { motion } from 'framer-motion'
 
-import { MainContainer } from '@components/MainContainer'
+import { MainContainer } from '@/layout/MainContainer'
 
-export const Home = () => {
+const Home = () => {
   return (
     <MainContainer>
       <div className='space-y-5 pb-10'>
@@ -51,3 +53,5 @@ export const Home = () => {
     </MainContainer>
   )
 }
+
+export default Home

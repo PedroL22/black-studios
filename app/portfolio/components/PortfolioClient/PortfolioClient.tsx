@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 interface PortfolioClientProps {
   name: string
@@ -15,9 +16,11 @@ export const PortfolioClient = ({ name, image, url }: PortfolioClientProps) => {
       whileHover={{ scale: 1.05, rotate: -2 }}
       whileTap={{ scale: 1.1, rotate: 0 }}
     >
-      <img
+      <Image
         src={image}
         alt={'Foto de ' + name}
+        width={300}
+        height={300}
         className='h-36 w-36 rounded-xl object-cover md:h-44 md:w-44'
       />
       <h2

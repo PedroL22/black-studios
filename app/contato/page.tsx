@@ -1,11 +1,13 @@
+'use client'
+
 import { motion } from 'framer-motion'
 
-import { MainContainer } from '@components/MainContainer'
+import { MainContainer } from '@/layout/MainContainer'
 import { SocialMedia } from './components/SocialMedia'
 
 import { EnvelopeSimple, InstagramLogo, TwitterLogo, WhatsappLogo, YoutubeLogo } from '@phosphor-icons/react'
 
-export const Contato = () => {
+const Contato = () => {
   return (
     <MainContainer>
       <div className='space-y-4 pb-10'>
@@ -98,3 +100,5 @@ export const Contato = () => {
     </MainContainer>
   )
 }
+
+export default Contato
