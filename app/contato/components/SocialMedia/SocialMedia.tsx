@@ -1,5 +1,7 @@
+import { ReactNode } from 'react'
+
 interface SocialMediaProps {
-  icon: React.ReactNode
+  icon: ReactNode
   name: string
   url: string
 }
