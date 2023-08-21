@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 import { DesktopHeader, MobileHeader } from './components'
@@ -10,7 +11,13 @@ export const Header = () => {
           href='/'
           className='duration-250 flex items-center font-medium transition-all ease-in hover:text-zinc-300'
         >
-          Black Studios
+          <Image
+            src='/logo.png'
+            alt='Logo Black Studios'
+            width={50}
+            height={50}
+            className='h-7 w-7 object-cover'
+          />
         </Link>
 
         <MobileHeader />
