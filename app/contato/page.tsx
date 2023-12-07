@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 
 import { SocialMedia } from '@/components'
-import { MainContainer } from '@/layouts/MainContainer'
+import { MainContainer } from '@/layouts'
 
 import { EnvelopeSimple, InstagramLogo, TwitterLogo, WhatsappLogo, YoutubeLogo } from '@phosphor-icons/react'
 

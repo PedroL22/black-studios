@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 
-import { MainContainer } from '@/layouts/MainContainer'
+import { MainContainer } from '@/layouts'
 
 const Home = () => {
   return (

@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 
 import { PortfolioClient } from '@/components'
-import { MainContainer } from '@/layouts/MainContainer'
+import { MainContainer } from '@/layouts'
 
 const Portfolio = () => {
   return (
