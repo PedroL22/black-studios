@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { ReactNode } from 'react'
 
-import { Header } from '@/layouts/Header'
+import { Header } from '@/layout/Header'
 import './globals.css'
 
 const inter = Inter({
