@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { ReactNode } from 'react'
@@ -30,6 +31,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         {children}
 
         <Footer />
+
+        <Analytics />
       </body>
     </html>
   )
