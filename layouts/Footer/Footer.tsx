@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <footer className='mt-auto h-16 bg-zinc-950'>
+    <footer className='h-16 bg-zinc-950'>
       <div className='mx-auto w-80 sm:w-[28rem] md:w-[36rem] lg:w-[55rem]'>
         <div className='mx-auto flex justify-between px-16 pt-4 md:px-36 lg:px-72' />
         <p className='pt-2 text-center text-xs text-zinc-50'>
