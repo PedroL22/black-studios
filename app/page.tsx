@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 
+import { VideoPlayer } from '@/components'
 import { MainContainer } from '@/layouts'
 
 const Home = () => {
@@ -14,7 +15,7 @@ const Home = () => {
           transition={{ duration: 0.5, delay: 0, ease: 'easeOut' }}
           className='flex flex-col whitespace-nowrap text-center text-5xl md:text-9xl'
         >
-          Bem-vindos à{' '}
+          Bem-vindos à
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -42,13 +43,7 @@ const Home = () => {
         aria-label='Vídeo de apresentação da Black Studios'
         className='flex justify-center pb-10'
       >
-        <iframe
-          src='https://www.youtube.com/embed/Rl8oGtG-qNM'
-          title='vídeo'
-          allow='autoplay'
-          allowFullScreen
-          className='h-[175px] w-[320px] md:h-[480px] md:w-[768px]'
-        />
+        <VideoPlayer />
       </motion.main>
     </MainContainer>
   )
