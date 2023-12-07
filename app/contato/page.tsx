@@ -2,8 +2,8 @@
 
 import { motion } from 'framer-motion'
 
+import { SocialMedia } from '@/components'
 import { MainContainer } from '@/layouts/MainContainer'
-import { SocialMedia } from './components/SocialMedia'
 
 import { EnvelopeSimple, InstagramLogo, TwitterLogo, WhatsappLogo, YoutubeLogo } from '@phosphor-icons/react'
 
