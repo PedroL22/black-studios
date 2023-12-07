@@ -2,7 +2,9 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { ReactNode } from 'react'
 
-import { Header } from '@/layout/Header'
+import { Footer } from '@/layouts'
+import { Header } from '@/layouts/Header'
+
 import './globals.css'
 
 const inter = Inter({
@@ -22,9 +24,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang='pt-BR'>
-      <body className={`${inter.className} min-h-[calc(100vh-8rem)] bg-zinc-900 text-zinc-50 antialiased`}>
+      <body className={`${inter.className} bg-zinc-900 text-zinc-50 antialiased`}>
         <Header />
+
         {children}
+
+        <Footer />
       </body>
     </html>
   )

@@ -5,5 +5,5 @@ interface MainContainerProps {
 }
 
 export const MainContainer = ({ children }: MainContainerProps) => {
-  return <div className='mx-auto w-full max-w-screen-xl p-7'>{children}</div>
+  return <div className='mx-auto min-h-[calc(100vh-8rem)] w-full max-w-screen-xl p-7'>{children}</div>
 }

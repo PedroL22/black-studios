@@ -18,6 +18,7 @@ export const DesktopHeader = () => {
       >
         Home
       </Link>
+
       <Link
         href='/portfolio'
         className={
@@ -28,6 +29,7 @@ export const DesktopHeader = () => {
       >
         Portfólio
       </Link>
+
       <Link
         href='/contato'
         className={

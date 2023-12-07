@@ -3,9 +3,9 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
+import Link from 'next/link'
 
 import { List, X } from '@phosphor-icons/react'
-import Link from 'next/link'
 
 export const MobileHeader = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -34,6 +34,7 @@ export const MobileHeader = () => {
           />
         )}
       </motion.div>
+
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -50,6 +51,7 @@ export const MobileHeader = () => {
             >
               Home
             </Link>
+
             <Link
               href='/portfolio'
               onClick={() => setIsOpen(false)}
@@ -57,6 +59,7 @@ export const MobileHeader = () => {
             >
               Portfólio
             </Link>
+
             <Link
               href='/contato'
               onClick={() => setIsOpen(false)}
