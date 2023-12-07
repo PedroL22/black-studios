@@ -2,10 +2,10 @@
 
 import { motion } from 'framer-motion'
 
-import { GridContent } from '@/components/Portfolio'
+import { PortfolioClient } from '@/components'
 import { MainContainer } from '@/layouts'
 
-export default function Portfolio() {
+const Portfolio = () => {
   return (
     <MainContainer>
       <div className='space-y-4 pb-20'>
@@ -17,7 +17,6 @@ export default function Portfolio() {
         >
           Portfólio
         </motion.h1>
-
         <motion.p
           initial={{ opacity: 0, x: -15 }}
           animate={{ opacity: 1, x: 0 }}
@@ -26,7 +25,6 @@ export default function Portfolio() {
         >
           Esses são os clientes que fazem parte da nossa produtora.
         </motion.p>
-
         <motion.p
           initial={{ opacity: 0, x: -15 }}
           animate={{ opacity: 1, x: 0 }}
@@ -45,9 +43,15 @@ export default function Portfolio() {
           aria-label='Clientes da Black Studios'
           className='grid grid-cols-2 items-center justify-center gap-6 md:grid-cols-3 md:gap-10 lg:grid-cols-4 lg:gap-16'
         >
-          <GridContent />
+          <PortfolioClient
+            name='Imaginago'
+            image='https://yt3.googleusercontent.com/EX2aqD1pd6LthGe_Grx5BhVPSXMBiRXzq6cpnrl7AuJqUBfgF5l8VvpNfxUBVI5m2yjhoZE_Xg=s900-c-k-c0x00ffffff-no-rj'
+            url='https://www.youtube.com/@imaginago'
+          />
         </motion.main>
       </div>
     </MainContainer>
   )
 }
+
+export default Portfolio

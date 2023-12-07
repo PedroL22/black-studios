@@ -2,12 +2,12 @@
 
 import { motion } from 'framer-motion'
 
-import { SocialMedia } from '@/components/Contato'
+import { SocialMedia } from '@/components'
 import { MainContainer } from '@/layouts'
 
 import { EnvelopeSimple, InstagramLogo, TwitterLogo, WhatsappLogo, YoutubeLogo } from '@phosphor-icons/react'
 
-export default function Contato() {
+const Contato = () => {
   return (
     <MainContainer>
       <div className='space-y-4 pb-10'>
@@ -19,7 +19,6 @@ export default function Contato() {
         >
           Contato
         </motion.h1>
-
         <motion.p
           initial={{ opacity: 0, x: -15 }}
           animate={{ opacity: 1, x: 0 }}
@@ -49,7 +48,6 @@ export default function Contato() {
           name='matheus2707.profissional@gmail.com'
           url='mailto:matheus2707.profissional@gmail.com'
         />
-
         <SocialMedia
           icon={
             <WhatsappLogo
@@ -62,7 +60,6 @@ export default function Contato() {
           name='+55 (12) 99754-8203'
           url='https://api.whatsapp.com/send?phone=5512997548203'
         />
-
         <SocialMedia
           icon={
             <TwitterLogo
@@ -75,7 +72,6 @@ export default function Contato() {
           name='Twitter'
           url='https://twitter.com/mthsoliveiro'
         />
-
         <SocialMedia
           icon={
             <InstagramLogo
@@ -88,7 +84,6 @@ export default function Contato() {
           name='Instagram'
           url='https://www.instagram.com/mthsoliveiro'
         />
-
         <SocialMedia
           icon={
             <YoutubeLogo
@@ -105,3 +100,5 @@ export default function Contato() {
     </MainContainer>
   )
 }
+
+export default Contato

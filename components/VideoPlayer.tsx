@@ -1,6 +1,4 @@
-import { FC } from 'react'
-
-export const VideoPlayer: FC = () => {
+export const VideoPlayer = () => {
   return (
     <div className='h-[175px] w-[320px] md:h-[480px] md:w-[768px]'>
       <iframe
