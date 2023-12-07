@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['yt3.googleusercontent.com'],
+    domains: ['black-studios-back-end.onrender.com'],
   },
 }
 

@@ -2,10 +2,10 @@
 
 import { motion } from 'framer-motion'
 
-import { VideoPlayer } from '@/components'
+import { VideoPlayer } from '@/components/Home'
 import { MainContainer } from '@/layouts'
 
-const Home = () => {
+export default function Home() {
   return (
     <MainContainer>
       <div className='space-y-5 pb-10'>
@@ -48,5 +48,3 @@ const Home = () => {
     </MainContainer>
   )
 }
-
-export default Home

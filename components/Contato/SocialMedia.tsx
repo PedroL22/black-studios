@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import { FC, ReactNode } from 'react'
 
 interface SocialMediaProps {
   icon: ReactNode
@@ -6,7 +6,7 @@ interface SocialMediaProps {
   url: string
 }
 
-export const SocialMedia = ({ icon, name, url }: SocialMediaProps) => {
+export const SocialMedia: FC<SocialMediaProps> = ({ icon, name, url }) => {
   return (
     <div className='flex transition-all duration-200 ease-out hover:text-zinc-300'>
       {icon}
