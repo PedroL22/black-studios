@@ -4,8 +4,6 @@ import { PortfolioChannel } from '.'
 
 import { requestChannels } from '@/clients/ContentClient'
 
-import { ChannelEntity } from '@/entities/ContentEntity'
-
 export const GridContent: FC = async () => {
   const channelsData = await requestChannels()
 

@@ -5,9 +5,7 @@ import { FC } from 'react'
 import { ChannelEntity } from '@/entities/ContentEntity'
 
 export const PortfolioChannel: FC<ChannelEntity> = ({ attributes }) => {
-  const imageUrl = `${process.env.NEXT_PUBLIC_STRAPI_URL?.replace('/api/', '')}${
-    attributes.imagem.data.attributes.formats.medium.url
-  }`
+  const imageUrl = `${process.env.NEXT_PUBLIC_STRAPI_URL?.replace('/api/', '')}${attributes.imagem.data.attributes.url}`
 
   return (
     <motion.a
@@ -19,7 +17,7 @@ export const PortfolioChannel: FC<ChannelEntity> = ({ attributes }) => {
     >
       <Image
         src={imageUrl}
-        alt={'Foto de ' + attributes.nome}
+        alt='Foto do canal'
         width={300}
         height={300}
         className='h-36 w-36 rounded-xl object-cover md:h-44 md:w-44'
