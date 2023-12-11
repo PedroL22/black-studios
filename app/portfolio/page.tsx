@@ -24,7 +24,7 @@ export default function Portfolio() {
           transition={{ duration: 0.5, delay: 0.05, ease: 'easeOut' }}
           className='text-xl text-zinc-200'
         >
-          Esses são os clientes que fazem parte da nossa produtora.
+          Esses são os clientes que fazem/fizeram parte da nossa produtora.
         </motion.p>
 
         <motion.p
