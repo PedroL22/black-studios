@@ -46,8 +46,8 @@ export default function Contato() {
               aria-hidden
             />
           }
-          name='matheus2707.profissional@gmail.com'
-          url='mailto:matheus2707.profissional@gmail.com'
+          name='blackkstudioss@gmail.com'
+          url='mailto:blackkstudioss@gmail.com'
         />
 
         <SocialMedia
@@ -59,8 +59,8 @@ export default function Contato() {
               aria-hidden
             />
           }
-          name='+55 (12) 99754-8203'
-          url='https://api.whatsapp.com/send?phone=5512997548203'
+          name='+55 12 98867-1443'
+          url='https://api.whatsapp.com/send?phone=5512988671443'
         />
 
         <SocialMedia
@@ -73,7 +73,7 @@ export default function Contato() {
             />
           }
           name='Twitter'
-          url='https://twitter.com/mthsoliveiro'
+          url='https://twitter.com/BlackStudioss_'
         />
 
         <SocialMedia
@@ -86,7 +86,7 @@ export default function Contato() {
             />
           }
           name='Instagram'
-          url='https://www.instagram.com/mthsoliveiro'
+          url='https://www.instagram.com/blackstudios_ofc/'
         />
 
         <SocialMedia
@@ -99,7 +99,7 @@ export default function Contato() {
             />
           }
           name='YouTube'
-          url='https://www.youtube.com/@matheusoliveiro3834'
+          url='https://www.youtube.com/channel/UCzMgVvT8QIOoEibEyADik2w'
         />
       </motion.main>
     </MainContainer>
