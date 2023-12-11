@@ -4,7 +4,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_STRAPI_URL
 
 export const requestChannels = async (): Promise<ChannelEntity[]> => {
   try {
-    const response = await fetch(`${BASE_URL}youtube-channels?populate=*`)
+    const response = await fetch(`${BASE_URL}youtube-channels`)
     if (!response.ok) {
       throw new Error(`Failed to fetch data. Status: ${response.status} - ${response.statusText}`)
     }
