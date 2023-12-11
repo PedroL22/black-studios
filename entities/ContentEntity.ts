@@ -3,7 +3,7 @@ export interface ChannelEntity {
   attributes: {
     nome: string
     url: string
-    imagem: { data: { attributes: { url: string } } }
+    link_imagem: string
     createdAt: string
     updatedAt: string
     publishedAt: string
