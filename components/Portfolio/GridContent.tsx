@@ -2,14 +2,12 @@ import { FC } from 'react'
 
 import { PortfolioChannel } from '.'
 
-import { requestChannels } from '@/clients/ContentClient'
+import { youtube_channels } from '../../portfolioData.json'
 
 export const GridContent: FC = async () => {
-  const channelsData = await requestChannels()
-
   return (
     <>
-      {channelsData.map((channel) => (
+      {youtube_channels.map((channel) => (
         <PortfolioChannel
           key={channel.id}
           {...channel}
