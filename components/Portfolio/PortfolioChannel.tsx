@@ -4,17 +4,17 @@ import { FC } from 'react'
 
 import { ChannelEntity } from '@/entities/ContentEntity'
 
-export const PortfolioChannel: FC<ChannelEntity> = ({ attributes }) => {
+export const PortfolioChannel: FC<ChannelEntity> = ({ name, url, link_imagem }) => {
   return (
     <motion.a
-      href={attributes.url}
+      href={url}
       target='_blank'
       rel='noreferrer'
       whileHover={{ scale: 1.05, rotate: -2 }}
       whileTap={{ scale: 1.1, rotate: 0 }}
     >
       <Image
-        src={attributes.link_imagem}
+        src={link_imagem}
         alt='Foto do canal'
         width={300}
         height={300}
@@ -25,7 +25,7 @@ export const PortfolioChannel: FC<ChannelEntity> = ({ attributes }) => {
         aria-hidden
         className='pt-1 text-center text-lg'
       >
-        {attributes.nome}
+        {name}
       </h2>
     </motion.a>
   )
