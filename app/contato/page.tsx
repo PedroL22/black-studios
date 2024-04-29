@@ -86,7 +86,7 @@ export default function Contato() {
             />
           }
           name='Instagram'
-          url='https://www.instagram.com/blackstudios_ofc/'
+          url='https://www.instagram.com/blackstudioss_/'
         />
 
         <SocialMedia
