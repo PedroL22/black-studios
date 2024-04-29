@@ -2,9 +2,9 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { FC } from 'react'
 
-import { ChannelEntity } from '~/entities/ContentEntity'
+import { ClientEntity } from '~/entities/ContentEntity'
 
-export const PortfolioChannel: FC<ChannelEntity> = ({ name, url }) => {
+export const PortfolioChannel: FC<ClientEntity> = ({ name, url }) => {
   return (
     <motion.a
       href={url}
