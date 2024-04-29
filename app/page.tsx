@@ -2,8 +2,8 @@
 
 import { motion } from 'framer-motion'
 
-import { VideoPlayer } from '@/components/Home'
-import { MainContainer } from '@/layouts'
+import { VideoPlayer } from '~/components/Home/VideoPlayer'
+import { MainContainer } from '~/layouts/MainContainer'
 
 export default function Home() {
   return (

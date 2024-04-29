@@ -2,8 +2,9 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { FC } from 'react'
 
-export const DesktopHeader = () => {
+export const DesktopHeader: FC = () => {
   const pathname = usePathname()
 
   return (

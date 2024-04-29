@@ -1,9 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { FC } from 'react'
 
-import { DesktopHeader, MobileHeader } from './components'
+import { DesktopHeader } from './components/DesktopHeader'
+import { MobileHeader } from './components/MobileHeader'
 
-export const Header = () => {
+export const Header: FC = () => {
   return (
     <header className='flex h-16 items-center justify-center bg-zinc-950 text-zinc-50'>
       <nav className='flex w-full max-w-screen-xl justify-between p-5'>

@@ -1,22 +1,19 @@
 {
-  "youtube_channels": [
+  "clients": [
     {
       "id": 1,
       "name": "Geleia",
-      "url": "https://www.youtube.com/@geleia0",
-      "link_imagem": "https://yt3.googleusercontent.com/nrwA5erjqaDKmVh5Rs_kUPetdZBQ6pxrZeJjGLFBTzWy9xyJ9ZP7aMHUE8svznVxexB_i9brajQ=s900-c-k-c0x00ffffff-no-rj"
+      "url": "https://www.youtube.com/@geleia0"
     },
     {
       "id": 2,
       "name": "Imaginago",
-      "url": "https://www.youtube.com/@imaginago",
-      "link_imagem": "https://yt3.googleusercontent.com/3-xLLmAuhQtJ4U8D32t9IuyRn3OZXgX6HEoS9zIZIH0TPyJ--BSj3fHb9YOXRYV4MgsL17iM=s900-c-k-c0x00ffffff-no-rj"
+      "url": "https://www.youtube.com/@imaginago"
     },
     {
       "id": 3,
       "name": "rBiana",
-      "url": "https://www.youtube.com/@rbiana",
-      "link_imagem": "https://yt3.googleusercontent.com/hdB_P20TyIUjWZ3RacSLRUFqMRgKT8MZ4yi3H_rG9HCZe6JfPVUvoX7Nco3yT6zmL5GtvmhVvg=s176-c-k-c0x00ffffff-no-rj"
+      "url": "https://www.youtube.com/@rbiana"
     }
   ]
 }

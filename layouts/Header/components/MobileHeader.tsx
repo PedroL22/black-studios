@@ -1,13 +1,13 @@
 'use client'
 
 import { AnimatePresence, motion } from 'framer-motion'
-import { usePathname } from 'next/navigation'
-import { useState } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { FC, useState } from 'react'
 
 import { List, X } from '@phosphor-icons/react'
 
-export const MobileHeader = () => {
+export const MobileHeader: FC = () => {
   const [isOpen, setIsOpen] = useState(false)
   const pathname = usePathname()
 

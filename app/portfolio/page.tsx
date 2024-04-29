@@ -2,8 +2,8 @@
 
 import { motion } from 'framer-motion'
 
-import { GridContent } from '@/components/Portfolio'
-import { MainContainer } from '@/layouts'
+import { GridContent } from '~/components/Portfolio/GridContent'
+import { MainContainer } from '~/layouts/MainContainer'
 
 export default function Portfolio() {
   return (

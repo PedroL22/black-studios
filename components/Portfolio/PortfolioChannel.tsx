@@ -2,9 +2,9 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { FC } from 'react'
 
-import { ChannelEntity } from '@/entities/ContentEntity'
+import { ChannelEntity } from '~/entities/ContentEntity'
 
-export const PortfolioChannel: FC<ChannelEntity> = ({ name, url, link_imagem }) => {
+export const PortfolioChannel: FC<ChannelEntity> = ({ name, url }) => {
   return (
     <motion.a
       href={url}
@@ -14,7 +14,7 @@ export const PortfolioChannel: FC<ChannelEntity> = ({ name, url, link_imagem }) 
       whileTap={{ scale: 1.1, rotate: 0 }}
     >
       <Image
-        src={link_imagem}
+        src={`/${name}.jpg`}
         alt='Foto do canal'
         width={300}
         height={300}
