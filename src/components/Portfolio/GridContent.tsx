@@ -4,12 +4,12 @@ import { PortfolioChannel } from './PortfolioChannel'
 
 import { type ClientEntity } from '~/entities/ContentEntity'
 
-import { clients } from '../../portfolioData.json'
+import portfolioData from '../../portfolioData.json'
 
 export const GridContent: FC = () => {
   return (
     <>
-      {clients.map((channel: ClientEntity) => (
+      {portfolioData.clients.map((channel: ClientEntity) => (
         <PortfolioChannel
           key={channel.id}
           {...channel}
