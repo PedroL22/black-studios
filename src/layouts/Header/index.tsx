@@ -18,7 +18,7 @@ export const Header: FC = () => {
             alt='Logo Black Studios'
             width={50}
             height={50}
-            className='h-7 w-7 object-cover'
+            className='size-7 object-cover'
           />
         </Link>
 

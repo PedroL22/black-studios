@@ -8,7 +8,7 @@ export const DesktopHeader: FC = () => {
   const pathname = usePathname()
 
   return (
-    <div className='hidden space-x-6 md:flex'>
+    <div className='hidden gap-x-6 md:flex'>
       <Link
         href='/'
         className={

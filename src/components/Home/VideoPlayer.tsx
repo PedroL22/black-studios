@@ -4,6 +4,7 @@ export const VideoPlayer: FC = () => {
   return (
     <div className='h-[175px] w-[320px] md:h-[480px] md:w-[768px]'>
       <iframe
+        title='Vídeo de apresentação da Black Studios'
         src='https://geo.dailymotion.com/player/xm8vm.html?video=x8qc2cx'
         allow='autoplay; fullscreen; picture-in-picture'
         width='100%'
